@@ -8,22 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		861BDFD02A40403E005BB877 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861BDFCF2A40403E005BB877 /* AppDelegate.swift */; };
-		861BDFD22A40403E005BB877 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861BDFD12A40403E005BB877 /* SceneDelegate.swift */; };
 		861BDFD42A40403E005BB877 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861BDFD32A40403E005BB877 /* ViewController.swift */; };
 		861BDFD72A40403E005BB877 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861BDFD52A40403E005BB877 /* Main.storyboard */; };
 		861BDFD92A404040005BB877 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 861BDFD82A404040005BB877 /* Assets.xcassets */; };
 		861BDFDC2A404040005BB877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861BDFDA2A404040005BB877 /* LaunchScreen.storyboard */; };
+		861BE0352A4044BE005BB877 /* Punnycode in Frameworks */ = {isa = PBXBuildFile; productRef = 861BE0342A4044BE005BB877 /* Punnycode */; };
+		861BE03C2A405042005BB877 /* ContentBlockerConverter in Frameworks */ = {isa = PBXBuildFile; productRef = 861BE03B2A405042005BB877 /* ContentBlockerConverter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		861BDFCC2A40403E005BB877 /* TestADGuardContentCoverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestADGuardContentCoverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		861BDFCF2A40403E005BB877 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		861BDFD12A40403E005BB877 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		861BDFD32A40403E005BB877 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		861BDFD62A40403E005BB877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		861BDFD82A404040005BB877 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		861BDFDB2A404040005BB877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		861BDFDD2A404040005BB877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		861BE0392A404F5B005BB877 /* SafariConverterLib-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SafariConverterLib-master"; path = "../../../Downloads/SafariConverterLib-master"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				861BE03C2A405042005BB877 /* ContentBlockerConverter in Frameworks */,
+				861BE0352A4044BE005BB877 /* Punnycode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +43,10 @@
 		861BDFC32A40403E005BB877 = {
 			isa = PBXGroup;
 			children = (
+				861BE0382A404F5B005BB877 /* Packages */,
 				861BDFCE2A40403E005BB877 /* TestADGuardContentCoverter */,
 				861BDFCD2A40403E005BB877 /* Products */,
+				861BE03A2A40503D005BB877 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				861BDFCF2A40403E005BB877 /* AppDelegate.swift */,
-				861BDFD12A40403E005BB877 /* SceneDelegate.swift */,
 				861BDFD32A40403E005BB877 /* ViewController.swift */,
 				861BDFD52A40403E005BB877 /* Main.storyboard */,
 				861BDFD82A404040005BB877 /* Assets.xcassets */,
@@ -65,6 +69,21 @@
 				861BDFDD2A404040005BB877 /* Info.plist */,
 			);
 			path = TestADGuardContentCoverter;
+			sourceTree = "<group>";
+		};
+		861BE0382A404F5B005BB877 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				861BE0392A404F5B005BB877 /* SafariConverterLib-master */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		861BE03A2A40503D005BB877 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +102,10 @@
 			dependencies = (
 			);
 			name = TestADGuardContentCoverter;
+			packageProductDependencies = (
+				861BE0342A4044BE005BB877 /* Punnycode */,
+				861BE03B2A405042005BB877 /* ContentBlockerConverter */,
+			);
 			productName = TestADGuardContentCoverter;
 			productReference = 861BDFCC2A40403E005BB877 /* TestADGuardContentCoverter.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 861BDFC32A40403E005BB877;
+			packageReferences = (
+				861BE0332A4044BE005BB877 /* XCRemoteSwiftPackageReference "PunycodeSwift" */,
+			);
 			productRefGroup = 861BDFCD2A40403E005BB877 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +166,6 @@
 			files = (
 				861BDFD42A40403E005BB877 /* ViewController.swift in Sources */,
 				861BDFD02A40403E005BB877 /* AppDelegate.swift in Sources */,
-				861BDFD22A40403E005BB877 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -299,7 +324,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sandbox.aitranslator.TestADGuardContentCoverter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandbox.aitranslator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.sandbox.aitranslator.TestADGuardContentCoverter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandbox.aitranslator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -356,6 +381,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		861BE0332A4044BE005BB877 /* XCRemoteSwiftPackageReference "PunycodeSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gumob/PunycodeSwift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		861BE0342A4044BE005BB877 /* Punnycode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 861BE0332A4044BE005BB877 /* XCRemoteSwiftPackageReference "PunycodeSwift" */;
+			productName = Punnycode;
+		};
+		861BE03B2A405042005BB877 /* ContentBlockerConverter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ContentBlockerConverter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 861BDFC42A40403E005BB877 /* Project object */;
 }
