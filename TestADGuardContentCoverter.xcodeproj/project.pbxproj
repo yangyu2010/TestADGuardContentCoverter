@@ -14,6 +14,7 @@
 		861BDFDC2A404040005BB877 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861BDFDA2A404040005BB877 /* LaunchScreen.storyboard */; };
 		861BE0352A4044BE005BB877 /* Punnycode in Frameworks */ = {isa = PBXBuildFile; productRef = 861BE0342A4044BE005BB877 /* Punnycode */; };
 		861BE03C2A405042005BB877 /* ContentBlockerConverter in Frameworks */ = {isa = PBXBuildFile; productRef = 861BE03B2A405042005BB877 /* ContentBlockerConverter */; };
+		861BE03E2A4051B5005BB877 /* shield_zh.txt in Resources */ = {isa = PBXBuildFile; fileRef = 861BE03D2A4051B5005BB877 /* shield_zh.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		861BDFDB2A404040005BB877 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		861BDFDD2A404040005BB877 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		861BE0392A404F5B005BB877 /* SafariConverterLib-master */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "SafariConverterLib-master"; path = "../../../Downloads/SafariConverterLib-master"; sourceTree = "<group>"; };
+		861BE03D2A4051B5005BB877 /* shield_zh.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = shield_zh.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		861BDFCE2A40403E005BB877 /* TestADGuardContentCoverter */ = {
 			isa = PBXGroup;
 			children = (
+				861BE03D2A4051B5005BB877 /* shield_zh.txt */,
 				861BDFCF2A40403E005BB877 /* AppDelegate.swift */,
 				861BDFD32A40403E005BB877 /* ViewController.swift */,
 				861BDFD52A40403E005BB877 /* Main.storyboard */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				861BDFDC2A404040005BB877 /* LaunchScreen.storyboard in Resources */,
+				861BE03E2A4051B5005BB877 /* shield_zh.txt in Resources */,
 				861BDFD92A404040005BB877 /* Assets.xcassets in Resources */,
 				861BDFD72A40403E005BB877 /* Main.storyboard in Resources */,
 			);
